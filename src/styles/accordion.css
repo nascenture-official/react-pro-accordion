@@ -1,0 +1,167 @@
+/* Base Accordion Styles */
+.react-pro-accordion {
+  width: 100%;
+  border: 1px solid var(--accordion-border-color, #e2e8f0);
+  border-radius: var(--accordion-border-radius, 0.5rem);
+  background-color: var(--accordion-bg-color, #ffffff);
+}
+
+.react-pro-accordion__item {
+  border-bottom: 1px solid var(--accordion-item-border-color, #e2e8f0);
+}
+
+.react-pro-accordion__item:last-child {
+  border-bottom: none;
+}
+
+.react-pro-accordion__item--expanded {
+  background-color: var(--accordion-item-expanded-bg, transparent);
+}
+
+.react-pro-accordion__item--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Header Styles */
+.react-pro-accordion__header {
+  margin: 0;
+}
+
+.react-pro-accordion__heading {
+  margin: 0;
+  font-size: inherit;
+}
+
+/* Trigger Button Styles */
+.react-pro-accordion__trigger {
+  width: 100%;
+  padding: var(--accordion-trigger-padding, 1rem);
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: var(--accordion-trigger-font-weight, 500);
+  color: var(--accordion-trigger-color, #1a202c);
+  cursor: pointer;
+  transition: all var(--accordion-transition-duration, 0.3s) ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--accordion-trigger-gap, 0.5rem);
+}
+
+.react-pro-accordion__trigger:hover {
+  background-color: var(--accordion-trigger-hover-bg, #f7fafc);
+  color: var(--accordion-trigger-hover-color, #2d3748);
+}
+
+.react-pro-accordion__trigger:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accordion-focus-ring-color, #3182ce);
+  position: relative;
+  z-index: 1;
+}
+
+.react-pro-accordion__trigger--expanded {
+  color: var(--accordion-trigger-expanded-color, #2c5282);
+  background-color: var(--accordion-trigger-expanded-bg, #ebf8ff);
+}
+
+/* Content Styles */
+.react-pro-accordion__content {
+  overflow: hidden;
+  will-change: height, opacity;
+}
+
+.react-pro-accordion__content--expanded {
+  visibility: visible;
+}
+
+.react-pro-accordion__content--animating {
+  overflow: hidden;
+}
+
+/* Content Inner Wrapper */
+.react-pro-accordion__content > * {
+  padding: var(--accordion-content-padding, 1rem);
+}
+
+/* Icon Styles */
+.react-pro-accordion__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--accordion-transition-duration, 0.3s) ease;
+  flex-shrink: 0;
+}
+
+.react-pro-accordion__icon--expanded {
+  transform: rotate(45deg);
+}
+
+.react-pro-accordion__icon svg {
+  width: 1.25em;
+  height: 1.25em;
+  display: block;
+}
+
+/* RTL Support */
+.react-pro-accordion--rtl .react-pro-accordion__trigger {
+  text-align: right;
+}
+
+.react-pro-accordion--rtl .react-pro-accordion__icon--expanded {
+  transform: rotate(45deg);
+}
+
+/* Animations */
+@keyframes accordion-slide-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--accordion-content-height, auto);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-slide-up {
+  from {
+    height: var(--accordion-content-height, auto);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.react-pro-accordion__content[data-animating='true'] {
+  animation-duration: var(--accordion-animation-duration, 0.3s);
+  animation-timing-function: var(--accordion-animation-easing, ease);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .react-pro-accordion__trigger,
+  .react-pro-accordion__content,
+  .react-pro-accordion__icon {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .react-pro-accordion__content {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+  }
+
+  .react-pro-accordion__trigger {
+    display: none;
+  }
+}

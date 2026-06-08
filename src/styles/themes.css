@@ -1,0 +1,106 @@
+/* Light Theme (Default) */
+:root {
+  --accordion-border-color: #e2e8f0;
+  --accordion-border-radius: 0.5rem;
+  --accordion-bg-color: #ffffff;
+
+  --accordion-item-border-color: #e2e8f0;
+  --accordion-item-expanded-bg: #f7fafc;
+
+  --accordion-trigger-padding: 1rem;
+  --accordion-trigger-font-weight: 500;
+  --accordion-trigger-color: #1a202c;
+  --accordion-trigger-hover-bg: #f7fafc;
+  --accordion-trigger-hover-color: #2d3748;
+  --accordion-trigger-expanded-color: #2c5282;
+  --accordion-trigger-expanded-bg: #ebf8ff;
+  --accordion-trigger-gap: 0.5rem;
+
+  --accordion-content-padding: 1rem;
+
+  --accordion-focus-ring-color: #3182ce;
+  --accordion-transition-duration: 0.3s;
+  --accordion-animation-duration: 0.3s;
+  --accordion-animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme */
+.react-pro-accordion--dark,
+[data-theme='dark'] .react-pro-accordion {
+  --accordion-border-color: #2d3748;
+  --accordion-bg-color: #1a202c;
+
+  --accordion-item-border-color: #2d3748;
+  --accordion-item-expanded-bg: #2d3748;
+
+  --accordion-trigger-color: #e2e8f0;
+  --accordion-trigger-hover-bg: #2d3748;
+  --accordion-trigger-hover-color: #f7fafc;
+  --accordion-trigger-expanded-color: #90cdf4;
+  --accordion-trigger-expanded-bg: #2c5282;
+
+  --accordion-focus-ring-color: #63b3ed;
+}
+
+/* Compact Theme */
+.react-pro-accordion--compact {
+  --accordion-trigger-padding: 0.5rem;
+  --accordion-content-padding: 0.5rem;
+  --accordion-border-radius: 0.25rem;
+}
+
+/* Large Theme */
+.react-pro-accordion--large {
+  --accordion-trigger-padding: 1.5rem;
+  --accordion-content-padding: 1.5rem;
+  --accordion-border-radius: 0.75rem;
+  --accordion-trigger-font-weight: 600;
+}
+
+/* Bordered Theme */
+.react-pro-accordion--bordered {
+  border: 2px solid var(--accordion-border-color);
+}
+
+.react-pro-accordion--bordered .react-pro-accordion__item {
+  border-bottom: 1px solid var(--accordion-border-color);
+}
+
+/* Minimal Theme */
+.react-pro-accordion--minimal {
+  border: none;
+}
+
+.react-pro-accordion--minimal .react-pro-accordion__trigger {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.react-pro-accordion--minimal .react-pro-accordion__trigger:hover {
+  background-color: transparent;
+}
+
+/* Card Theme */
+.react-pro-accordion--card {
+  border: none;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.react-pro-accordion--card .react-pro-accordion__item {
+  border: 1px solid var(--accordion-border-color);
+  border-radius: var(--accordion-border-radius);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.react-pro-accordion--card .react-pro-accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Gradient Theme */
+.react-pro-accordion--gradient .react-pro-accordion__trigger--expanded {
+  background: linear-gradient(135deg, var(--accordion-trigger-expanded-bg) 0%, #6b46c1 100%);
+  color: white;
+}
