@@ -524,4 +524,4 @@ npm run build
 
 ## License
 
-[MIT](LICENSE) © Nascenture
+This project is under the MIT license.
