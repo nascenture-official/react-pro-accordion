@@ -23,9 +23,9 @@ A powerful, accessible, customizable, and production-ready accordion component l
 ## Installation (Change Path Accordingly)
 
 ```bash
-npm install ../react-pro-accordion/react-pro-accordion-1.0.0.tgz
+npm install react-pro-accordion
 # or
-yarn add ../react-pro-accordion/react-pro-accordion-1.0.0.tgz
+yarn add react-pro-accordion
 ```
 
 ---

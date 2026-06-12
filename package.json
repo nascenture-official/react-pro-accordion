@@ -1,6 +1,6 @@
 {
   "name": "react-pro-accordion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A powerful, accessible, and customizable React accordion library",
   "type": "module",
   "main": "./dist/index.cjs",
