@@ -526,9 +526,7 @@ npm run build
 
 This project is under the MIT license.
 
-## Keywords
-
-React, React Accordion, Accordion Component, Collapsible, Expandable, Accessible, ARIA, TypeScript, Animation, React Library, UI Component, SSR, Next.js
+---
 
 ## Author
 
