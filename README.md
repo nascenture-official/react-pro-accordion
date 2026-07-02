@@ -526,7 +526,7 @@ npm run build
 
 This project is under the MIT license.
 
-## 🏷️ Keywords
+## Keywords
 
 React, ReactJS, React Accordion, Accordion Component, React UI, React Library, Collapsible, Expandable, Expand Collapse, Accessible Accordion, Accessibility, ARIA, Keyboard Navigation, TypeScript, CSS Variables, Animated Accordion, React Hooks, SSR, Next.js, RTL Support, Lazy Rendering, Tree Shaking, Production Ready, Frontend UI, Web Components, UI Library, Performance
 
