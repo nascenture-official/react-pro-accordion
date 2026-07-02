@@ -525,3 +525,10 @@ npm run build
 ## License
 
 This project is under the MIT license.
+
+## Author
+
+Built with ❤️ by Nascenture.
+
+- Website: https://www.nascenture.com
+- React Native Development Services: https://www.nascenture.com/react-native-app-development/
